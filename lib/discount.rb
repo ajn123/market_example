@@ -34,11 +34,11 @@ class Discount
         end
 
         def discount_at_quantity(count)
-	        if count >= @limit
-	          puts Product.formatted_discount(@code, @amount)
-	          return @amount
-	        end
-	        return 0
+          if count >= @limit
+            puts Product.formatted_discount(@code, @amount)
+            return @amount
+          end
+          return 0
         end
 
         def get_something_free(count, item_count)
